@@ -65,4 +65,125 @@ public class Block implements Serializable
             return null;
         }
     }
+
+//    Get-set Methods for API access
+    public int getIndex()
+    {
+        return index;
+    }
+
+    public void setIndex(int index)
+    {
+        this.index = index;
+    }
+
+    public String getNoticeID()
+    {
+        return NoticeID;
+    }
+
+    public void setNoticeID(String NoticeID)
+    {
+        this.NoticeID = NoticeID;
+    }
+
+    public String getIDCategory()
+    {
+        return IDCategory;
+    }
+
+    public void setIDCategory(String IDCategory)
+    {
+        this.IDCategory = IDCategory;
+    }
+
+    public String getNoticeType()
+    {
+        return NoticeType;
+    }
+
+    public void setNoticeType(String NoticeType)
+    {
+        this.NoticeType = NoticeType;
+    }
+
+    public String getOffenseType()
+    {
+        return OffenseType;
+    }
+
+    public void setOffenseType(String OffenseType)
+    {
+        this.OffenseType = OffenseType;
+    }
+
+    public String getOffenseLocation()
+    {
+        return OffenseLocation;
+    }
+
+    public void setOffenseLocation(String OffenseLocation)
+    {
+        this.OffenseLocation = OffenseLocation;
+    }
+
+    public String getOffenseDate()
+    {
+        return OffenseDate;
+    }
+
+    public void setOffenseDate(String OffenseDate)
+    {
+        this.OffenseDate = OffenseDate;
+    }
+
+    public String getPaymentDate()
+    {
+        return PaymentDate;
+    }
+
+    public void setPaymentDate(String PaymentDate)
+    {
+        this.PaymentDate = PaymentDate;
+    }
+
+    public String getHash()
+    {
+        return hash;
+    }
+
+    public void sethash(String hash)
+    {
+        this.hash = hash;
+    }
+
+    public String getPrevioushash()
+    {
+        return previoushash;
+    }
+
+    public void setPrevioushash(String previoushash)
+    {
+        this.previoushash = previoushash;
+    }
+
+    public long getTimestamp()
+    {
+        return timestamp;
+    }
+
+    public void setTimestamp(long timestamp)
+    {
+        this.timestamp = timestamp;
+    }
+
+//    Overriding toString Method
+    @Override
+    public String toString()
+    {
+        return "Block{" + "index = " + index + ", NoticeID = " + NoticeID + ", IDCategory = " + IDCategory
+                + ", NoticeType = " + NoticeType + ", OffenseType = " + OffenseType + ", OfenseLocation = " + OffenseLocation
+                + ", OffenseDate = " + OffenseDate + ", PaymentDate = " + PaymentDate + ", hash = " + hash
+                + ", previoushash = " + previoushash + ", timestamp = " + timestamp + '}';
+    }
 }
