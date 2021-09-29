@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="501.0" prefWidth="816.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="501.0" prefWidth="833.0">
+         <children>
+            <Label layoutX="159.0" layoutY="19.0" prefHeight="34.0" prefWidth="342.0" text="Check Vehicle Fine Records" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Button layoutX="640.0" layoutY="23.0" mnemonicParsing="false" text="Back to User Selection" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73ff1f" height="6.0" layoutX="14.0" layoutY="83.0" stroke="BLACK" strokeType="INSIDE" width="791.0" />
+            <TableView layoutX="13.0" layoutY="97.0" prefHeight="227.0" prefWidth="791.0">
+              <columns>
+                <TableColumn prefWidth="83.0" text="Notice ID:" />
+                <TableColumn prefWidth="87.0" text="Id Category:" />
+                  <TableColumn prefWidth="89.0" text="Notice type:" />
+                  <TableColumn prefWidth="104.0" text="Offence type:" />
+                  <TableColumn prefWidth="123.0" text="offence location:" />
+                  <TableColumn prefWidth="154.0" text="Date and time of Offence:" />
+                  <TableColumn prefWidth="150.0" text="payment Date:" />
+              </columns>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </TableView>
+            <Label layoutX="31.0" layoutY="400.0" text="Search Vehicle Fine Records by ID Number:" />
+            <TextField layoutX="266.0" layoutY="396.0" prefHeight="25.0" prefWidth="320.0" />
+            <Button layoutX="614.0" layoutY="396.0" mnemonicParsing="false" text="Search" />
+         </children></AnchorPane>
+   </children>
+</GridPane>
