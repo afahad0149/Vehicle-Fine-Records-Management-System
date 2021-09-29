@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="501.0" prefWidth="816.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="501.0" prefWidth="833.0">
+         <children>
+            <Button layoutX="153.0" layoutY="63.0" mnemonicParsing="false" text="view fine Record" />
+            <Label layoutX="44.0" layoutY="18.0" prefHeight="34.0" prefWidth="342.0" text="Welcome to the Admin Dashboard" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Button layoutX="662.0" layoutY="35.0" mnemonicParsing="false" text="Logout" />
+            <Button layoutX="38.0" layoutY="63.0" mnemonicParsing="false" text="Add fine Record" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73ff1f" height="4.0" layoutX="31.0" layoutY="85.0" stroke="BLACK" strokeType="INSIDE" width="774.0" />
+            <TableView layoutX="13.0" layoutY="97.0" prefHeight="276.0" prefWidth="791.0">
+              <columns>
+                <TableColumn prefWidth="64.0" text="Notice ID:" />
+                <TableColumn prefWidth="73.0" text="Id Category:" />
+                  <TableColumn prefWidth="71.0" text="ID Number:" />
+                  <TableColumn prefWidth="100.0" text="Vehicle Number:" />
+                  <TableColumn prefWidth="77.0" text="Notice type:" />
+                  <TableColumn prefWidth="83.0" text="Offence type:" />
+                  <TableColumn prefWidth="105.0" text="offence location:" />
+                  <TableColumn prefWidth="126.0" text="Date and time of Offence:" />
+                  <TableColumn prefWidth="91.0" text="payment Date" />
+              </columns>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </TableView>
+         </children></AnchorPane>
+   </children>
+</GridPane>
